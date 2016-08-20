@@ -1,10 +1,11 @@
 # -*- coding: UTF-8 -*-
+import sys
+
+
+sys.path.append('C:\Users\Elad\PycharmProjects\ProTranslator')
 
 
 
-def main():
-    output = "elad"
-    print 'א'
-    print output
 
-main()
+
+
