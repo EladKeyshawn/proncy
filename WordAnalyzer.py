@@ -25,19 +25,19 @@ class WordAnalyzer:
 
     def startAnalyzing(self):
         print("Starting analysis...")
-        engString = self.input
+        word = self.input
         index = 0
-        while index < len(engString):
-           currLetter = engString[index]
+        while index < len(word):
+           currLetter = word[index]
            if checkBeginPronun(currLetter):
                print dicts.wordBeginPronun[currLetter] ,
 
-           elif isRegLetter(engString[index]):
-               print normLetter[engString[index]],
+           elif isRegLetter(word[index]):
+               print normLetter[word[index]],
 
            elif (index + 1 < self.length and index > 0):
-               befAndAf = engString[index-1] + engString[index+1]
-               midLetter = engString[index]
+               befAndAf = word[index-1] + word[index+1]
+               midLetter = word[index]
 
                if isRegLetter(midLetter) and ( befAndAf in remMidVowels):
                    print(remMidVowels[befAndAf] , normLetter[midLetter] ,)
@@ -51,6 +51,16 @@ class WordAnalyzer:
 
 word = WordAnalyzer("idle", 6)
 word.startAnalyzing()
+
+
+
+
+
+
+
+
+
+
 
 
 '''
