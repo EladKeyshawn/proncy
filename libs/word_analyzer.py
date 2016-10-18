@@ -8,16 +8,21 @@ dicts_list = dicts.dicts
 
 # find matches for subset withing different dictionaries
 def find_matches(subset):
+
     for dict in dicts_list:
         if(subset in dict):
             return dict[subset]
+
+    if len(subset) == 1:
+        if subset in dicts.wordBeginPronun:
+            return dicts.wordBeginPronun[subset]
 
     return 'none'
 
 
 class WordAnalyzer:
-    def __init__(self, givenInput, len):
-        self.input = givenInput
+    def __init__(self, input, len):
+        self.input = input
         self.length = len
 
 
@@ -33,7 +38,7 @@ class WordAnalyzer:
                 matched_val = find_matches(subset)
                 if matched_val != "none":
                     result += matched_val
-                    start_index_for_subset += len(subset)
+                    start_index_for_subset += len(subset) # moving subset_index by the num of letters mapped
                     break
 
         print result
@@ -41,8 +46,7 @@ class WordAnalyzer:
 
 
 
-
-word = WordAnalyzer("insist", 6)
+word = WordAnalyzer("killit", 6)
 word.start_analyzing()
 
 
