@@ -1,4 +1,6 @@
 # Proncy
 ## Pronunciation Translator
 
-### Currently in progress, supporting English -> Hebrew 
+### Currently in progress
+
+supporting ```English -> Hebrew ```
