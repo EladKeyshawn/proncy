@@ -1,11 +1,10 @@
-import dicts
+from libs import dicts
 
-
-normLetter = dicts.enLetterToHeb
+reg_letters_dic = dicts.reg_letters_dic
 remMidVowels = dicts.remMidVowels
 
 def isRegLetter(letter):
-    return letter in normLetter
+    return letter in reg_letters_dic
 
 
 def isVowelLetter(currLetter):
@@ -25,7 +24,7 @@ class WordAnalyzer:
 
     def startAnalyzing(self):
         print("Starting analysis...")
-        word = self.input
+        word = self.input # initial string
         index = 0
         while index < len(word):
            currLetter = word[index]
@@ -33,14 +32,14 @@ class WordAnalyzer:
                print dicts.wordBeginPronun[currLetter] ,
 
            elif isRegLetter(word[index]):
-               print normLetter[word[index]],
+               print reg_letters_dic[word[index]],
 
            elif (index + 1 < self.length and index > 0):
                befAndAf = word[index-1] + word[index+1]
                midLetter = word[index]
 
                if isRegLetter(midLetter) and ( befAndAf in remMidVowels):
-                   print(remMidVowels[befAndAf] , normLetter[midLetter] ,)
+                   print(remMidVowels[befAndAf] , reg_letters_dic[midLetter] ,)
 
            elif isVowelLetter(currLetter):
                print dicts.vowelsDict[currLetter],
