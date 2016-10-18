@@ -1,11 +1,16 @@
 # -*- coding: UTF-8 -*-
 import sys
-
-
-sys.path.append('C:\Users\Elad\PycharmProjects\ProTranslator')
-
+import hyphenate
 
 
 
 
+def test():
+    print hyphenate.hyphenate_word("shadows")
 
+
+
+
+
+
+test()

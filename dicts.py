@@ -25,7 +25,7 @@ vowelsDict = {'a': "", 'e': "", 'i': "י", 'o': "ו", 'u': "ו"}
 remMidVowels = {'ea': "יי"}
 
 
-# special pronunciation at word's beginnning
+# special pronunciation at word's beginning
 
 wordBeginPronun = {'i': "איי", "k":"", 'a': "א", 'e': "א", 'ig': "איג",}
 
