@@ -2,6 +2,7 @@
 
 import word_analyzer
 import sys
+import codecs
 
 
 def translate_words(words):
@@ -40,9 +41,18 @@ def get_data_from_txt(filename):
     return translated_contents
 
 
+def write_content_to_file(contents):
+    file = codecs.open('output.txt', 'w', 'utf-8')
+    for line in contents:
+        line = unicode(line + "\n", "utf-8")
+        file.write(line)
+    file.close()
+    return
+
+
 def test_file_manager():
     filename = "files/example.txt"
     translated_contents = get_data_from_txt(filename)
-
+    write_content_to_file(translated_contents)
 
 test_file_manager()
