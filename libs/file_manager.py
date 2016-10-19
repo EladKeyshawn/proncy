@@ -42,7 +42,7 @@ def get_data_from_txt(filename):
 
 
 def write_content_to_file(contents):
-    file = codecs.open('output.txt', 'w', 'utf-8')
+    file = codecs.open('files/output.txt', 'w', 'utf-8')
     for line in contents:
         line = unicode(line + "\n", "utf-8")
         file.write(line)

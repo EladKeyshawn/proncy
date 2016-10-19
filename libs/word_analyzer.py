@@ -85,5 +85,6 @@ start_analyzing("complicated")
      *** Comments and new cases for improving algorithm ***
      - IMPORTANT: need to check for letters like 'e' as first letters
      - check 'u' letter between two reg letters
+     - check 'ow'
 
 '''
