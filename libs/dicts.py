@@ -43,7 +43,7 @@ end_letters_len1 = {'e': ""}
 # special individual letters with different sound under curtain circumstances
 c_conditions = {'ce':"ס", 'ci': "סי", 'cy': "סיי"}
 
-g_conditions = {'ge': "ג׳י" , 'gi': "ג׳י" , 'gy' : "ג׳יי" , 'get' : "גט"}
+g_conditions = {'ge': "ג׳י" ,'gi': "ג׳י" ,'gy' : "ג׳יי",'get' : "גט"}
 
 e_conditions = {'ee': 'י', 'ea' : 'י' }
 

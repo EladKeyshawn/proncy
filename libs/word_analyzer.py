@@ -47,7 +47,7 @@ import matcher
 
 def start_analyzing(input):
     print("Starting analysis...")
-    word = str(input)  # initial word string
+    word = input  # initial word string
     result = ""
     start_index_for_subset = 0  # marking the first letter from which we generate subsets
 
@@ -60,13 +60,15 @@ def start_analyzing(input):
                 result += matched_val
                 start_index_for_subset += len(subset)  # moving subset_index by the num of letters mapped
                 break
+            if len(subset) == 1:
+                start_index_for_subset += 1
 
-    print result
+    return result
 
 
 
 
-# start_analyzing("complicated")
+start_analyzing("complicated")
 
 
 
