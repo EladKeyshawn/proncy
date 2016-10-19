@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb4e4e08-6cc1-4f2b-8768-cfa701fe9962" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/matcher.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/dicts.py" afterPath="$PROJECT_DIR$/libs/dicts.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/word_analyzer.py" afterPath="$PROJECT_DIR$/libs/word_analyzer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/word_analyzer_origin.py" afterPath="$PROJECT_DIR$/libs/word_analyzer_origin.py" />
     </list>
     <ignored path="ProTranslator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,30 +25,59 @@
     <favorites_list name="ProTranslator" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="dicts.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/dicts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="word_analyzer.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libs/word_analyzer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.4414566">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+          <file leaf-file-name="dicts.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/dicts.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-10">
+                  <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="word_analyzer.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/libs/word_analyzer.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#12#0" expanded="true" />
+                    <element signature="e#43#99#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="matcher.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/matcher.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="572">
+                  <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="dicts.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/libs/dicts.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="395">
+                  <caret line="52" column="18" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,6 +102,7 @@
         <option value="$PROJECT_DIR$/libs/decor.py" />
         <option value="$PROJECT_DIR$/libs/dicts.py" />
         <option value="$PROJECT_DIR$/libs/dicts.py" />
+        <option value="$PROJECT_DIR$/libs/matcher.py" />
         <option value="$PROJECT_DIR$/libs/word_analyzer.py" />
       </list>
     </option>
@@ -493,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476880262848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="now sort include start_index">
+      <created>1476881964900</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1476881964900</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -505,12 +544,12 @@
     <frame x="0" y="22" width="1920" height="992" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.153125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27735645" sideWeight="0.51458335" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23618636" sideWeight="0.48541668" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23618636" sideWeight="0.48541668" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="644" y="226" width="632" height="583" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -566,7 +605,8 @@
     <MESSAGE value="basic implementation of improved algo" />
     <MESSAGE value="added some useful funcs" />
     <MESSAGE value="more improvmnts" />
-    <option name="LAST_COMMIT_MESSAGE" value="more improvmnts" />
+    <MESSAGE value="now sort include start_index" />
+    <option name="LAST_COMMIT_MESSAGE" value="now sort include start_index" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -605,6 +645,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,6 +679,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,6 +713,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -704,6 +747,7 @@
           <caret line="51" column="25" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="25" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -729,6 +773,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,6 +799,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -828,18 +874,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/dicts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="-10">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/word_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#43#99#0" expanded="false" />
           </folding>
         </state>
       </provider>

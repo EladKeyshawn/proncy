@@ -8,7 +8,7 @@ def isRegLetter(letter):
 
 
 def isVowelLetter(currLetter):
-    return currLetter in dicts.vowelsDict
+    return currLetter in dicts.vowels
 
 
 def checkBeginPronun(currLetter):
@@ -42,7 +42,7 @@ class WordAnalyzer:
                    print(remMidVowels[befAndAf] , reg_letters_dic[midLetter] ,)
 
            elif isVowelLetter(currLetter):
-               print dicts.vowelsDict[currLetter],
+               print dicts.vowels[currLetter],
 
            index += 1
 
