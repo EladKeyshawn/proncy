@@ -32,9 +32,9 @@ remMidVowels = {'ea': "יי"}
 
 
 # special pronunciation at word's beginning
-initial_letters = {'i': "איי", "k": "", 'a': "א", 'e': "א", 'ig': "איג", 'y' : 'י'}
+initial_letters_len1 = {'i': "איי", "k": "", 'a': "א", 'e': "א", 'y' : 'י'}
 
-
+initial_letters_len2 = {'ig': "איג", 'ee' : "אי"  }
 
 
 
@@ -42,6 +42,9 @@ initial_letters = {'i': "איי", "k": "", 'a': "א", 'e': "א", 'ig': "איג",
 # special individual letters with different sound under curtain circumstances
 c_conditions = {'ce':"ס", 'ci': "סי", 'cy': "סיי"}
 
+g_conditions = {}
+
+e_conditions = {'ee': 'י', }
 
 
 
@@ -50,6 +53,10 @@ dicts.append(commonSyllablesDict)
 dicts.append(vowelsDict)
 dicts.append(specialVowls)
 dicts.append(c_conditions)
+dicts.append(e_conditions)
+dicts.append(initial_letters_len1)
+dicts.append(initial_letters_len2)
+
 # def testDicOutput():
 #     print specialVowls['ch']
 #
