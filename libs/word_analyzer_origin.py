@@ -12,7 +12,7 @@ def isVowelLetter(currLetter):
 
 
 def checkBeginPronun(currLetter):
-    return currLetter in dicts.wordBeginPronun
+    return currLetter in dicts.initial_letters
 
 
 
@@ -29,7 +29,7 @@ class WordAnalyzer:
         while index < len(word):
            currLetter = word[index]
            if checkBeginPronun(currLetter):
-               print dicts.wordBeginPronun[currLetter] ,
+               print dicts.initial_letters[currLetter] ,
 
            elif isRegLetter(word[index]):
                print reg_letters_dic[word[index]],

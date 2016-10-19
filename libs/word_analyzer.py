@@ -5,17 +5,29 @@ import utils
 
 reg_letters_dic = dicts.reg_letters_dic
 dicts_list = dicts.dicts
-
+c_cond = dicts.c_conditions
+spec_vowls = dicts.specialVowls
 # find matches for subset withing different dictionaries
 def find_matches(subset):
+    # sort cases by len of subset
+    length = len(subset)
+    # if length == 1:
+
+    if length == 2:
+        if subset in c_cond:
+            return c_cond[subset]
+        if subset in spec_vowls:
+            return spec_vowls[subset]
+        if subset[0] == subset[1] and subset[0] in reg_letters_dic:
+            return reg_letters_dic[subset[0]]
 
     for dict in dicts_list:
         if(subset in dict):
             return dict[subset]
 
-    if len(subset) == 1:
-        if subset in dicts.wordBeginPronun:
-            return dicts.wordBeginPronun[subset]
+    # if len(subset) == 1:
+    #     if subset in dicts.wordBeginPronun:
+    #         return dicts.wordBeginPronun[subset]
 
     return 'none'
 
@@ -46,7 +58,7 @@ class WordAnalyzer:
 
 
 
-word = WordAnalyzer("killit", 6)
+word = WordAnalyzer("gilad", 6)
 word.start_analyzing()
 
 

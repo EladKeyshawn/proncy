@@ -5,8 +5,10 @@
 
 dicts = []
 
+
+
  # Bold letter dict from en to he
-reg_letters_dic = {'a': 'א', 'b': 'ב', 'd': 'ד', 'f':'פ','h': "ה",  'j' : "ג'", 'k':'ק' , 'l': "ל", 'm': "מ", 'n': "נ",
+reg_letters_dic = {'a': 'א', 'b': 'ב', 'c': "ק",'d': 'ד', 'f':'פ','h': "ה",  'j' : "ג'", 'k':'ק' , 'l': "ל", 'm': "מ", 'n': "נ",
                  'o':"ו", 'p': "פ" , 'q': "ק" , 'r': "ר" , 's': "ס", 't': 'ת',
                  'u': "ו", 'v' : "ו", 'w': "וו", 'x': 'קס', 'z': "ז"}
 
@@ -21,8 +23,6 @@ vowelsDict = {'a': "", 'e': "", 'i': "י", 'o': "ו", 'u': "ו"}
 
 
 # special chars combinations
-
-
 specialVowls = {'sh' : 'ש', 'ch' : 'צ׳'}
 
 
@@ -32,17 +32,24 @@ remMidVowels = {'ea': "יי"}
 
 
 # special pronunciation at word's beginning
+initial_letters = {'i': "איי", "k": "", 'a': "א", 'e': "א", 'ig': "איג", 'y' : 'י'}
 
-wordBeginPronun = {'i': "איי", "k":"", 'a': "א", 'e': "א", 'ig': "איג", 'y' : 'י'}
+
+
+
+
+
+# special individual letters with different sound under curtain circumstances
+c_conditions = {'ce':"ס", 'ci': "סי", 'cy': "סיי"}
+
 
 
 
 dicts.append(reg_letters_dic)
 dicts.append(commonSyllablesDict)
 dicts.append(vowelsDict)
-
-
-
+dicts.append(specialVowls)
+dicts.append(c_conditions)
 # def testDicOutput():
 #     print specialVowls['ch']
 #
