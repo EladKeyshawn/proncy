@@ -42,34 +42,31 @@ import matcher
 #     return 'none'
 
 
-class WordAnalyzer:
-    def __init__(self, input, len):
-        self.input = input
-        self.length = len
 
 
-    def start_analyzing(self):
-        print("Starting analysis...")
-        word = self.input # initial word string
-        result = ""
-        start_index_for_subset = 0 # marking the first letter from which we generate subsets
 
-        while(start_index_for_subset < len(word)):
-            curr_subsets = utils.get_string_subsets(word[start_index_for_subset:]) # passing our subsets gen the word from start index
-            for subset in reversed(curr_subsets): # traversing subsets from the longest to catch larger conditions
-                matched_val = matcher.find_matches(subset, start_index_for_subset, word)
-                if matched_val != "none":
-                    result += matched_val
-                    start_index_for_subset += len(subset) # moving subset_index by the num of letters mapped
-                    break
+def start_analyzing(input):
+    print("Starting analysis...")
+    word = str(input)  # initial word string
+    result = ""
+    start_index_for_subset = 0  # marking the first letter from which we generate subsets
 
-        print result
+    while (start_index_for_subset < len(word)):
+        curr_subsets = utils.get_string_subsets(
+            word[start_index_for_subset:])  # passing our subsets gen the word from start index
+        for subset in reversed(curr_subsets):  # traversing subsets from the longest to catch larger conditions
+            matched_val = matcher.find_matches(subset, start_index_for_subset, word)
+            if matched_val != "none":
+                result += matched_val
+                start_index_for_subset += len(subset)  # moving subset_index by the num of letters mapped
+                break
+
+    print result
 
 
 
 
-word = WordAnalyzer('complicated', 6)
-word.start_analyzing()
+# start_analyzing("complicated")
 
 
 
