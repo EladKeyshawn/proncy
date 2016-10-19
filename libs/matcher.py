@@ -26,6 +26,9 @@ def find_matches(subset, start_index, word):
         word_matchup_result = match_common_words(word)
         if len(word_matchup_result) > 0:
             return word_matchup_result
+        if length == 1:
+            if subset in init_lett_len1:
+                return init_lett_len1[subset]
         if length == 2:
             if subset in init_lett_len2:
                 return init_lett_len2[subset]

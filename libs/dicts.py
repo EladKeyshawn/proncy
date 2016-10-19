@@ -31,7 +31,7 @@ special_vowls_len2 = {'sh' : 'ש', 'ch' : 'צ׳', 'ph': "פ", 'th': "ת׳", 'ss'
 
 
 # special pronunciation at word's beginning
-initial_letters_len1 = {'i': "איי", "k": "", 'a': "א", 'e': "א", 'y' : 'י'}
+initial_letters_len1 = {'i': "אי", "k": "", 'a': "א", 'e': "א", 'y' : "י", 'u' : "א"}
 
 initial_letters_len2 = {'ig': "איג", 'ee' : "אי" }
 
@@ -49,7 +49,7 @@ e_conditions = {'ee': 'י', 'ea' : 'י' }
 
 
 # common short words for quick turn up
-common_words = {'i' : "איי"}
+common_words = {'i' : "איי", 'we' : "ווי", 'she' : 'שי' , 'all': 'אול', 'the': 'ת׳י', 'or' : 'אור'}
 
 seperate_dicts = []
 seperate_dicts.append(common_words)
