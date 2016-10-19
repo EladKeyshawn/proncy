@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-from libs import hyphenate
+from proncy import hyphenate
 
 
 def test():

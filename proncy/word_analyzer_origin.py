@@ -1,4 +1,4 @@
-from libs import dicts
+from proncy import dicts
 
 reg_letters_dic = dicts.reg_letters_dic
 remMidVowels = dicts.remMidVowels
