@@ -62,7 +62,7 @@ def start_analyzing(input):
                 break
             if len(subset) == 1:
                 start_index_for_subset += 1
-
+    print  result
     return result
 
 

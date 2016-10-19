@@ -3,7 +3,7 @@
 
 # Dictionaries of English letters & syllables to Hebrew
 
-dicts = []
+basic_dicts = []
 
 
 
@@ -48,19 +48,18 @@ g_conditions = {'ge': "ג׳י" ,'gi': "ג׳י" ,'gy' : "ג׳יי",'get' : "גט"
 e_conditions = {'ee': 'י', 'ea' : 'י' }
 
 
+# common short words for quick turn up
+common_words = {'i' : "איי"}
 
-dicts.append(reg_letters_dic)
-# dicts.append(commonSyllablesDict)
-dicts.append(vowels)
-dicts.append(special_vowls_len2)
-dicts.append(c_conditions)
-dicts.append(e_conditions)
-dicts.append(g_conditions)
-dicts.append(initial_letters_len1)
-dicts.append(initial_letters_len2)
-dicts.append(end_letters_len1)
-# def testDicOutput():
-#     print specialVowls['ch']
-#falling
-#
-# testDicOutput()
+seperate_dicts = []
+seperate_dicts.append(common_words)
+
+basic_dicts.append(reg_letters_dic)
+basic_dicts.append(vowels)
+basic_dicts.append(special_vowls_len2)
+basic_dicts.append(c_conditions)
+basic_dicts.append(e_conditions)
+basic_dicts.append(g_conditions)
+basic_dicts.append(initial_letters_len1)
+basic_dicts.append(initial_letters_len2)
+basic_dicts.append(end_letters_len1)
