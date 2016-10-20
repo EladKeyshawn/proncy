@@ -13,6 +13,9 @@ def translate_words(words):
         # word = word.lower
         word = str(word).lower()
         word = word.replace('\'', '')
+        word = word.replace('.', '')
+        word = word.replace(',', '')
+
         trans_word = word_analyzer.start_analyzing(word)
         translated_words.append(trans_word)
 
